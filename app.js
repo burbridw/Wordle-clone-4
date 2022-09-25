@@ -1,10 +1,37 @@
 const fourLetterWords = ["blue", "club", "draw", "bear", "want", "sour", "help", "fast", "fall", "trip", "hard", "cake", "bike", "nice", "corn", "knee", 
-"play", "slow", "cool", "fine", "city", "live", "jump", "left", "head", "rice", "wall", "park", "hall", "soda", "stop", "pork", "have", "ball", "body", 
-"cook", "rock", "drum", "bird", "case", "home", "food", "cute", "fish", "five", "taxi", "long", "ship", "went", "swim", "easy", "cold", "kite", "rope", 
-"band", "pond", "room", "tree", "team", "kind", "star", "glue", "bath", "busy", "girl", "kiwi", "wash", "soup", "desk", "ride", "vest", "walk", "frog", 
-"beef", "join", "arts", "make", "nose", "peru", "sing", "face", "milk", "math", "like", "hand", "talk", "boat", "book", "bean", "lake", "look", "turn", 
-"pink", "bake", "soft", "post", "good", "read", "lion"]
-console.log(fourLetterWords.length)
+"play", "slow", "cool", "fine", "city", "live", "jump", "left", "head", "rice", "wall", "park", "hall", "soda", "stop", "pork", "have", "ball", "cook", 
+"rock", "drum", "bird", "case", "home", "food", "cute", "fish", "five", "taxi", "long", "ship", "went", "swim", "easy", "cold", "kite", "rope", "band", 
+"pond", "room", "tree", "team", "kind", "star", "glue", "bath", "busy", "girl", "kiwi", "wash", "soup", "desk", "ride", "vest", "walk", "frog", "beef", 
+"join", "arts", "make", "nose", "peru", "sing", "face", "milk", "math", "like", "hand", "talk", "boat", "book", "bean", "lake", "look", "turn", "pink", 
+"bake", "soft", "post", "good", "read", "lion"]
+
+const fourLetterWordsObj = {
+    "blue": "./images/colours/img2.png", "club": "./images/clubactivities/img11.png", "draw": "./images/actions1/img25.png", "bear": "./images/animals/img1.png", 
+    "want": "./images/actions2/img2.png", "sour": "./images/tastes/img4.png", "help": "./images/actions1/img12.png", "fast": "./images/conditions/img11.png", 
+    "fall": "./images/seasons/img3.png", "trip": "./images/schoolevents/img2.png", "hard": "./images/conditions/img8.png", "cake": "./images/desserts/img1.png", 
+    "bike": "./images/vehicles/img10.png", "nice": "./images/descriptions/img3.png", "corn": "./images/fruitsvegetables/img8.png", "knee": "./images/body/img5.png", 
+    "play": "./images/actions2/img5.png", "slow": "./images/conditions/img12.png", "cool": "./images/descriptions/img7.png", "fine": "./images/feelings/img1.png", 
+    "city": "./images/buildings/img7.png", "live": "./images/actions2/img14.png", "jump": "./images/actions1/img3.png", "left": "./images/directions/img5.png", 
+    "head": "./images/body/img1.png", "rice": "./images/foods/img1.png", "wall": "./images/commonitems/img27.png", "park": "./images/buildings/img4.png", 
+    "hall": "./images/buildings/img7.png", "soda": "./images/drinks/img5.png", "stop": "./images/actions1/img8.png", "pork": "./images/ingredients/img3.png", 
+    "have": "./images/actions2/img10.png", "ball": "./images/commonitems/img1.png", "cook": "./images/actions1/img12.png", "rock": "./images/activities/img11.png", 
+    "drum": "./images/instruments/img7.png", "bird": "./images/animals/img23.png", "case": "./images/stationary/img5.png", "home": "./images/dailyactivities/img9.png", 
+    "food": "./images/actions1/img10.png", "cute": "./images/descriptions/img8.png", "fish": "./images/seaanimals/img5.png", "five": "./images/numbers/img5.png", 
+    "taxi": "./images/vehicles/img3.png", "long": "./images/conditions/img3.png", "ship": "./images/vehicles/img7.png", "went": "./images/pastactions/img1.png", 
+    "swim": "./images/actions1/img5.png", "easy": "./images/conditions/img7.png", "cold": "./images/weather/img5.png", "kite": "./images/activities/img8.png", 
+    "rope": "./images/activities/img13.png", "band": "./images/clubactivities/img17.png", "pond": "./images/nature/img6.png", "room": "./images/school/img1.png", 
+    "tree": "./images/nature/img12.png", "team": "./images/clubactivities/img1.png", "kind": "./images/personalities/img6.png", "star": "./images/shapes/img7.png", 
+    "glue": "./images/stationary/img9.png", "bath": "./images/commonitems/img25.png", "busy": "./images/feelings/img8.png", "girl": "./images/people/img2.png", 
+    "kiwi": "./images/fruitsvegetables/img13.png", "wash": "./images/dailyactivities/img14.png", "soup": "./images/foods/img19.png", "desk": "./images/commonitems/img21.png", 
+    "ride": "./images/actions1/img16.png", "vest": "./images/clothes/img3.png", "walk": "./images/dailyactivities/img11.png", "frog": "./images/animals/img22.png", 
+    "beef": "./images/ingredients/img1.png", "join": "./images/actions2/img13.png", "arts": "./images/subjects/img8.png", "make": "./images/actions1/img11.png", 
+    "nose": "./images/body/img8.png", "peru": "./images/countries/img18.png", "sing": "./images/actions1/img1.png", "face": "./images/body/img2.png", "milk": "./images/drinks/img6.png", 
+    "math": "./images/subjects/img5.png", "like": "./images/actions2/img1.png", "hand": "./images/body/img4.png", "talk": "./images/actions1/img24.png", 
+    "boat": "./images/vehicles/img8.png", "book": "./images/commonitems/img11.png", "bean": "./images/fruitsvegetables/img3.png", "lake": "./images/nature/img4.png", 
+    "look": "./images/actions2/img3.png", "turn": "./images/actions1/img9.png", "pink": "./images/colours/img6.png", "bake": "./images/actions1/img13.png", 
+    "soft": "./images/tastes/img7.png", "post": "./images/buildings/img14.png", "good": "./images/feelings/img2.png", "read": "./images/actions1/img22.png", 
+    "lion": "./images/animals/img5.png"
+}
 
 let word = ""
 let randomSelectFour = "" 
@@ -14,18 +41,22 @@ let correctGuess = 0
 let gameActive = true
 let inputArr = []
 let answerArr = []
+const dictionary = document.querySelector(".dictionary")
+function buildDictionary() {
+    fourLetterWords.forEach( (x) => {
+        dictionary.innerHTML += `<div class="dictionary-image">${x} <img src="${fourLetterWordsObj[x]}"></div>`
+    })
 
+}
+
+buildDictionary()
 start()
 
-
-
-console.log(answerArr)
-
-
 function start() {
-    randomSelectFour = Math.floor( Math.random()*99 )
+    randomSelectFour = Math.floor( Math.random()*98 )
     word = fourLetterWords[randomSelectFour]
     answerArr = word.split("")
+    console.log(answerArr)
     answerCount = 0
     round = 0
     correctGuess = 0
@@ -49,13 +80,17 @@ const enterBtn = document.getElementById("enter")
 const keyboardDiv = document.querySelector(".keyboard")
 const messageBox = document.getElementById("message-box")
 const endMessage = document.getElementById("end-message")
+const endImage = document.getElementById("end-image")
 const resetBtn = document.getElementById("reset-btn")
 const endBox = document.querySelector(".reset-box")
-
+const upperBox = document.querySelector(".upper-container")
+const lowerBox = document.querySelector(".lower-container")
+const imageBox = document.querySelector(".answer-image-container")
+const dictionaryBtn = document.getElementById("dictionary-button")
+const closeDictionaryBtn = document.getElementById("close-dictionary")
 const answerBoxContainer = document.querySelector(".answer-box-container")
 
 let answerInput = document.querySelector(".answer-active")
-
 let answerBox0 = answerInput.children[0]
 let answerBox1 = answerInput.children[1]
 let answerBox2 = answerInput.children[2]
@@ -167,7 +202,8 @@ mKey.addEventListener("click",function() {
     press("m")
 })
 
-window.addEventListener("keydown", (x) => {       
+window.addEventListener("keydown", (x) => {
+    if (gameActive) {
     if (x.key === "Enter") {
         checkGuess()
     } else if (x.key === "Backspace") {
@@ -175,6 +211,11 @@ window.addEventListener("keydown", (x) => {
     } else {
     if ( /[a-z]/.test(x.key) && x.key.length === 1) {
         press(x.key)
+    }
+    }
+    } else {
+    if (x.key === "Enter") {
+        resetGame()
     }
 }
 })
@@ -202,10 +243,10 @@ function press(key) {
 
 function del() {
     if (gameActive) {
-    if (answerBox3.textContent !== "") {
-            answerBox3.textContent = ""
-            inputArr.pop()
-            answerCount = 3
+    if (answerBox3.textContent !== "") { 
+        answerBox3.textContent = ""
+        inputArr.pop()
+        answerCount = 3
         } else if (answerBox2.textContent !== "") {
             answerBox2.textContent = ""
             inputArr.pop()
@@ -231,8 +272,21 @@ enterBtn.addEventListener("click",function(){
 })
 
 resetBtn.addEventListener("click",function(){
+    resetGame()
+})
+
+dictionaryBtn.addEventListener("click",function(){
+    dictionary.classList.remove("dictionary-close")
+})
+
+closeDictionaryBtn.addEventListener("click",function() {
+    dictionary.classList.add("dictionary-close")
+})
+
+function resetGame() {
     endBox.classList.add("hide-me")
-    
+    upperBox.classList.remove("go-transparent")
+    lowerBox.classList.remove("go-transparent")
     answerInput.classList.remove("answer-active")
     let currentAnswerBox = answerBoxContainer.children[0]
     currentAnswerBox.classList.add("answer-active")
@@ -241,8 +295,12 @@ resetBtn.addEventListener("click",function(){
     answerBox1 = answerInput.children[1]
     answerBox2 = answerInput.children[2]
     answerBox3 = answerInput.children[3]
+    let imageBoxes = document.querySelectorAll(".answer-image")
+    imageBoxes.forEach( (x) => {
+        x.textContent = ""
+    })
     start()
-})
+}
 
 function checkGuess() {
     let thisGuess = inputArr.join("")
@@ -253,6 +311,12 @@ function checkGuess() {
     } else if ( !fourLetterWords.includes(thisGuess) ) {
         showMessage("Word not in list")
     } else {
+        let currentImageBox = imageBox.children[round]
+        console.log(currentImageBox)
+        console.log(thisGuess)
+        let currentImage = fourLetterWordsObj[thisGuess]
+        console.log(currentImage)
+        currentImageBox.innerHTML = `<img src=${currentImage}>`
         greenCheck()
     }
 }
@@ -269,21 +333,18 @@ function showMessage(message) {
 function greenCheck() {
     for ( let i = 0; i < answerArr.length; i++ ) {
         if (answerArr[i] === inputArr[i]) {
-            console.log("green" + i)
             let currentAnswer = answerInput.children[i]
-            currentAnswer.style.backgroundColor ="green"
+            currentAnswer.style.backgroundColor ="greenyellow"
 
             let allKeys = document.querySelectorAll(".key")
             allKeys.forEach ( (x) => {
                 if (x.textContent === inputArr[i]) {
-                    x.style.backgroundColor = "green"
+                    x.style.backgroundColor = "greenyellow"
                 }
             })
             correctGuess++
             answerArr.splice( i, 1, "*")
             inputArr.splice( i, 1, "@")
-            console.log(answerArr)
-            console.log(inputArr)
             }
         }   
             if ( correctGuess === 4) {
@@ -296,58 +357,63 @@ function greenCheck() {
 function yellowCheck() {
     for ( let i = 0; i < answerArr.length; i++ ) {
         if (answerArr.includes(inputArr[i]) && answerArr[i] !== inputArr[i]) {
-        console.log("yellow" + i)
         let currentAnswer = answerInput.children[i]
-            currentAnswer.style.backgroundColor ="goldenrod"
+            currentAnswer.style.backgroundColor ="yellow"
 
             let allKeys = document.querySelectorAll(".key")
             allKeys.forEach ( (x) => {
-                if (x.textContent === inputArr[i] && x.style.backgroundColor !== "green") {
-                    x.style.backgroundColor = "goldenrod"
+                if (x.textContent === inputArr[i] && x.style.backgroundColor !== "greenyellow") {
+                    x.style.backgroundColor = "yellow"
                 }
             })
-        console.log(answerArr.indexOf(`${inputArr[i]}`))
         let cutIndex = answerArr.indexOf(`${inputArr[i]}`)
 
         inputArr.splice( i, 1, "@")
         
         answerArr.splice( cutIndex, 1, "*")
         
-        console.log(answerArr)
-        console.log(inputArr)
         } 
     }  for ( let i = 0; i < 4; i++ ) {
         let currentAnswer = answerInput.children[i]
         let allKeys = document.querySelectorAll(".key")
-        if (currentAnswer.style.backgroundColor !== "green" && currentAnswer.style.backgroundColor !== "goldenrod") {
-            currentAnswer.style.backgroundColor = "grey"
-            console.log(currentAnswer.textContent)
+        if (currentAnswer.style.backgroundColor !== "greenyellow" && currentAnswer.style.backgroundColor !== "yellow") {
+            currentAnswer.style.backgroundColor = "darkgray"
             allKeys.forEach ( (x) => {
-                if (x.textContent === currentAnswer.textContent && x.style.backgroundColor !== "green" && x.style.backgroundColor !== "goldenrod") {
-                    x.style.backgroundColor = "grey"
+                if (x.textContent === currentAnswer.textContent && x.style.backgroundColor !== "greenyellow" && x.style.backgroundColor !== "yellow") {
+                    x.style.backgroundColor = "darkgray"
                 }
             })
         }
     }   if ( round < 5) {
         resetRound()
-    }  else if ( round === 5 && correctGuess < 4) {
+    }  else if ( round === 5 && correctGuess < 54) {
         gameOver()
     }
 }
 
 function playerWins() {
-    console.log("player wins")
     gameActive = false
     endMessage.textContent = "You Win!"
-    endBox.classList.remove("hide-me")
-
+    let correctImage = fourLetterWordsObj[word]
+    endImage.innerHTML = `It was "${word}" <img src=${correctImage}>`
+    upperBox.classList.add("go-transparent")
+    lowerBox.classList.add("go-transparent")
+    setTimeout( () => {
+        endBox.classList.remove("hide-me")
+    }, 1000)
+    
 }
 
 function gameOver() {
-    console.log("Game Over")
     gameActive = false
     endMessage.textContent = "You Lose!"
-    endBox.classList.remove("hide-me")
+    let correctImage = fourLetterWordsObj[word]
+    endImage.innerHTML = `It was "${word}" <img src=${correctImage}>`
+    upperBox.classList.add("go-transparent")
+    lowerBox.classList.add("go-transparent")
+    setTimeout( () => {
+        endBox.classList.remove("hide-me")
+    }, 1000)
 }
 
 function resetRound() {
@@ -366,4 +432,3 @@ function resetRound() {
     correctGuess = 0
     answerCount = 0
 }
-
