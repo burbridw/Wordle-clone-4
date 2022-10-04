@@ -287,7 +287,7 @@ function yellowCheck() {
         }
     }   if ( round < 5) {
         resetRound()
-    }  else if ( round === 5 && correctGuess < 54) {
+    }  else if ( round === 5 && correctGuess < 4) {
         gameOver()
     }
 }
